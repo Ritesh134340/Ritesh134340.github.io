@@ -11,7 +11,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Stats from './components/Stats';
-
+import Scroll from './components/Scroll';
 function App() {
   return (
     <>
@@ -25,6 +25,7 @@ function App() {
      <Skills/>
      <Stats/>
      <Contact/>
+     <Scroll/>
      <Follow/>
     </ThemeProvider>
     </>

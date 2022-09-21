@@ -44,8 +44,8 @@ export const InputWrapper=styled.div`
    margin-top:20px;
    padding-left:15px;
    font-size:18px;
-   border:2px solid black;
-   font-weight:900;
+   border:1px solid black;
+   font-weight:400;
    color:black;
    
   }
@@ -57,9 +57,10 @@ export const InputWrapper=styled.div`
    background:${({theme})=>theme.colors.white};
    margin-top:20px;
    padding-left:15px;
+   padding-top:15px;
    font-size:18px;
-   border:2px solid black;
-   font-weight:900;
+   border:1px solid black;
+   font-weight:400;
    color:black;
   } 
   button{

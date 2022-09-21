@@ -4,6 +4,7 @@ import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import {FaWhatsapp} from "react-icons/fa"
 import {SiGmail} from "react-icons/si";
+
 const Contact = () => {
   
   const form = useRef();
@@ -45,6 +46,7 @@ const Contact = () => {
       <button type="submit" value="Send">Submit</button>
       
         </InputWrapper>
+      
       </FormWrapper> 
       
       </ChildHolder>
