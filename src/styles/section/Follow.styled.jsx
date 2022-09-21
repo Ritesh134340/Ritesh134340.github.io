@@ -26,8 +26,8 @@ export const FollowDiv=styled.div`
     align-items: center;
     background:linear-gradient(
    135deg,
-   rgba(8,64,77,0.9) 0%,
-   rgba(2,12,27,0.8) 100%
+   white 1%,
+   rgba(2,12,27,0.8) 80%
  );
     div{
         margin:auto;

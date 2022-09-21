@@ -28,8 +28,8 @@ const waving=keyframes`
 `
 
 export const AboutWrapper=styled.div`
-
 color:white;
+border-radius:3px;
 margin:auto;
 display:flex;
 align-items: center;
@@ -112,4 +112,23 @@ export const AboutHeader=styled.h1`
    color:${({theme})=>theme.colors.orange}
 
   
+`
+
+export const SoftSkill=styled.div`
+display:flex;
+margin-top:10px;
+margin:auto;
+width:80%;
+justify-content: space-evenly;
+
+  li{
+    text-align:center;
+    margin-left:10px;
+    font-size:16px;
+    font-family:sans-serif;
+    letter-spacing:0.6px;
+  }
+  @media (max-width:${({theme})=>theme.mobile}){
+    display:none;
+  }
 `

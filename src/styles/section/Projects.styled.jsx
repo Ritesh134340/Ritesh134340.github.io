@@ -16,8 +16,9 @@ const Divmover=keyframes`
 
 export const ProjectWrapper = styled.div`
   line-height: 35px;
+   
   h1{
-    
+   
     color: white;
     font-family: monospace;
     text-align: center;
@@ -26,13 +27,21 @@ export const ProjectWrapper = styled.div`
   }
 
   h4 {
+    height:5px;
+    width:50%;
+    margin:auto;
+  
+     background:linear-gradient(to right,black,white,black);
     color: white;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     letter-spacing: 0.6px;
     font-weight: 400;
- 
+    @media (max-width:500px){
+   font-size:20px;
+    width:95%;
+  }
   }
   margin-top:50px;
 
@@ -46,8 +55,9 @@ margin:auto;
 `;
 
 export const IndividualProject = styled.div`
+  box-sizing: border-box;
   margin-top:45px;
-  background: linear-gradient(to right,teal ,black);
+  background: linear-gradient(to top,teal ,black 70%);
   background-clip: text;
  
 `;

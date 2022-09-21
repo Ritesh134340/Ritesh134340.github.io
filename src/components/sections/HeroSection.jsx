@@ -9,7 +9,8 @@ export const HeroSection=()=>{
     <HeroContent>
         <h1>Ritesh Kumar</h1>
         <AnimatedGradientText>{"{Full-Stack Web Developer}"}</AnimatedGradientText>
-        <h3 ></h3>
+        <h5 >Team Work | Time Management | Leadership | Communication </h5>
+        
 
         <div>
             <CTAButton href="#projects">Projects</CTAButton>

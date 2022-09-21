@@ -49,12 +49,19 @@ h1{
   overflow:hidden;
   font-weight:400;
   width:25ch;
+  
   white-space:nowrap;
   margin:auto;
   animation:${typing} 5s steps(25), ${blink} 1s ease-in-out 8s infinite;
   border-right:4px solid rgba(255,255,255,1)
 }
+h5{
+  margin-top:-50px;
+ padding-bottom:25px;
+  font-size:17px;
+ 
 
+}
 
 p{
   font-size:1.7rem;
@@ -73,10 +80,13 @@ h1{
 }
 h3{
   font-size:2.2rem;
- 
+
 }
 p{
   font-size:1.3rem;
+}
+h5{
+  display:none;
 }
 }
 `;
