@@ -5,8 +5,7 @@ const Projects = () => {
   return (
     <ProjectWrapper id="projects">
       <h1>PROJECTS</h1>
-    
-      <h4>These are some of my projects</h4>
+     <h4></h4>
     <ProjectWrapperChild>
   
       <IndividualProject >

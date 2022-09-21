@@ -1,6 +1,5 @@
 import { CTAButton } from "../../styles/common/CTAbutton.styled"
 import { AnimatedGradientText, HeroContent, StyledHeroSection } from "../../styles/section/HeroSection.styled"
-import Contact from "../Contact"
 
 export const HeroSection=()=>{
   return (
