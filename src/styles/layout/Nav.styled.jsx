@@ -28,7 +28,8 @@ export const Nav=styled.nav`
     z-index:98;
     transition:all 1s ease-in-out;
     position:fixed;
-    top:43px
+    top:40px;
+  
 `;
 
 export const Logo=styled.img`
@@ -42,7 +43,6 @@ export const MenuIcon=styled.div`
     padding:0.3rem;
     border-radius:5px;
     display:none;
-  
     position:absolute;
     right:23px;
     top:15px;
