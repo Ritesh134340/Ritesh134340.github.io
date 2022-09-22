@@ -20,7 +20,7 @@ export const Nav=styled.nav`
     height:85px;
     width:100%;
     padding:0 20px;
-    background:rgb(2,12,27,0.8);
+    background:rgb(2,12,27,1);
     display:flex;
     justify-content:space-between;
     align-items: center;
