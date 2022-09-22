@@ -10,7 +10,7 @@ export const Button = styled.div`
   color: ${({ theme }) => theme.colors.orange};
   
   @media (max-width:${({theme})=>theme.mobile}){
-      left:50%;
+      left:47%;
       bottom:60px;
   }
 `;
