@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonHolder, ChildHolder, ChildImage, ChildImageWrapper, CoverImage, ImageHolder, IndividualProject, ProjectDiscription, ProjectWrapper, ProjectWrapperChild } from '../styles/section/Projects.styled'
+import { ButtonHolder, ChildHolder, ChildImageWrapper, CoverImage, IndividualProject, ProjectDiscription, ProjectWrapper, ProjectWrapperChild } from '../styles/section/Projects.styled'
 
 const Projects = () => {
   return (

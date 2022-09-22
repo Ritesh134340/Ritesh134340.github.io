@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutHeader, AboutWrapper, ImageWrapper, ParaWrapper, SoftSkill } from "../styles/section/About.styled";
+import { AboutHeader, AboutWrapper, ImageWrapper, ParaWrapper } from "../styles/section/About.styled";
 
 const About = () => {
   return (

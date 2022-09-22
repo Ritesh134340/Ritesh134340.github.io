@@ -20,7 +20,6 @@ export const Nav=styled.nav`
     height:85px;
     width:100%;
     padding:0 20px;
- 
     background:rgb(2,12,27,0.8);
     display:flex;
     justify-content:space-between;
@@ -29,7 +28,7 @@ export const Nav=styled.nav`
     z-index:98;
     transition:all 1s ease-in-out;
     position:fixed;
-    top:${({scrollDirection})=>scrollDirection==="down" ? "-80px" : "40px" }
+    top:43px
 `;
 
 export const Logo=styled.img`

@@ -1,17 +1,18 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { ChildHolder, ContactOptional, ContactWrapper, FormWrapper, InputWrapper } from '../styles/section/Contact.style'
-import  { useRef } from 'react';
+import  { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {FaWhatsapp} from "react-icons/fa"
 import {SiGmail} from "react-icons/si";
 
 const Contact = () => {
-  
+ 
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current.user_email,form.current.user_message)
+
+   
     emailjs.sendForm('service_dbypmdj', 'template_73rnwuy', form.current, 'OKsVpYnIuJVJInk-2')
       .then((result) => {
          alert("Message sent !");
@@ -38,7 +39,7 @@ const Contact = () => {
       
       <InputWrapper>
     
-      <input type="text" name="user_name" placeholder='Your name' />
+      <input type="text"  name="user_name" placeholder='Your name' />
    
       <input type="email" name="user_email" placeholder="Your email" />
    
