@@ -67,11 +67,11 @@ export const InputWrapper=styled.div`
    border:1px solid transparent;
    display:block;
     margin:auto;
-   padding:16px 85px;
+   padding:16px 80px;
    border-radius:12px;
    margin-top:15px;
    margin-bottom:20px;
-   font-size:18px;
+   
    font-weight:bold;
    color:white;
    background-color:${({theme})=>theme.colors.green};
@@ -120,7 +120,7 @@ export const ContactOptional=styled.div`
 ` 
 export const FormWrapper=styled.form`
 color:black;
-width:40%;
+width:27%;
 margin-left:30px;
 margin-right:30px;
 border:1px solid red;

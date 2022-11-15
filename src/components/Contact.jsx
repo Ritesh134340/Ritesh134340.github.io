@@ -6,18 +6,20 @@ import {FaWhatsapp} from "react-icons/fa"
 import {SiGmail} from "react-icons/si";
 
 const Contact = () => {
- 
+  const [loading,setLoading]=useState(false)
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-   
+    setLoading(true)
     emailjs.sendForm('service_dbypmdj', 'template_73rnwuy', form.current, 'OKsVpYnIuJVJInk-2')
       .then((result) => {
+        setLoading(false)
          alert("Message sent !");
          
       }, (error) => {
+        setLoading(false)
           alert(error.text);
       });
   };
@@ -44,7 +46,7 @@ const Contact = () => {
       <input type="email" name="user_email" placeholder="Your email" />
    
       <textarea name="message" placeholder="Type your message..." />
-      <button type="submit" value="Send">Submit</button>
+      <button type="submit" value="Send">{loading?"Sending...":"Submit"}</button>
       
         </InputWrapper>
       
