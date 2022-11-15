@@ -38,20 +38,19 @@ export const StyledHeroSection=styled.section`
 `
 
 export const HeroContent=styled.div`
-width:100%;
-max-width:58rem;
+width:95%;
+margin:auto;
 color:${({theme})=>theme.colors.white};
 text-transform:uppercase;
-
+text-align: center;
 h1{
   letter-spacing:1.2rem;
   font-size:2rem;
   overflow:hidden;
   font-weight:400;
   width:25ch;
-  
-  white-space:nowrap;
   margin:auto;
+  white-space:nowrap;
   animation:${typing} 5s steps(25), ${blink} 1s ease-in-out 8s infinite;
   border-right:4px solid rgba(255,255,255,1)
 }
@@ -73,6 +72,7 @@ div{
 }
 
 @media (max-width: ${({theme})=>theme.mobile}){
+ 
 h1{
   letter-spacing:1rem;
   font-size:1.5rem;
@@ -102,7 +102,10 @@ h5{
 export const AnimatedGradientText = styled.h3`
   color:${({theme})=>theme.colors.orange};
   font-size:4rem;
-  margin:1.5rem 0;
+  margin-top:10px;
+  /* margin:1.5rem 0; */
+  /* margin-left:2%;
+  margin-right:2%; */
   background-image: -webkit-linear-gradient(92deg, ${({theme})=>theme.colors.purple},${({theme})=>theme.colors.white});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,4 +117,10 @@ export const AnimatedGradientText = styled.h3`
   margin-bottom: 80px;
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: grayscale;
+  @media (max-width: ${({theme})=>theme.mobile}){
+
+  margin-bottom:60px;
+  
+ 
+ }
 `;
