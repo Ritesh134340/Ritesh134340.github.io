@@ -12,6 +12,8 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Stats from './components/Stats';
 import Scroll from './components/Scroll';
+
+
 function App() {
   return (
     <>

@@ -64,7 +64,7 @@ const Navbar = () => {
         
        )
       }
-     <CTAButton  href="https://drive.google.com/uc?export=download&id=1IaBOdscX4V_TVD-faJQQRwW9VZGqu5RG" targnt="_blank" download="Ritesh-Kumar-Resume.pdf">
+     <CTAButton  href="https://drive.google.com/uc?export=download&id=1kY_wIb3m12dG8qCaamZeiPqXhiq5SA9P" targnt="_blank" download="Ritesh-Kumar-Resume.pdf">
     <FaDownload></FaDownload>{" "}Resume
       </CTAButton>
      </NavList>

@@ -28,6 +28,7 @@ const Contact = () => {
   
      
      <ContactWrapper id="contact">
+        
       <hr/> 
       <h1>Please Send your Query</h1>
       <ChildHolder>
