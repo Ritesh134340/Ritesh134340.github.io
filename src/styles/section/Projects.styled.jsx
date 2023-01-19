@@ -181,7 +181,7 @@ export const ChildHolder=styled.div`
  
    
    @media (max-width:1050px){
-    flex-direction:column;
+    flex-direction:${(props)=>props.rev==="rev" ? "column-reverse":"column"};
       width:90%;
       height:auto;
       gap:0px;

@@ -15,8 +15,8 @@ const Projects = () => {
     <ProjectWrapper id="projects">
       <h1>PROJECTS</h1>
       <h4></h4>
-      <IndividualProject reverse>
-        <ChildHolder>
+      <IndividualProject  reverse>
+        <ChildHolder rev="rev">
           <ProjectDiscription>
             <h2>TodoApplication</h2>
             <h5>Description :</h5>
@@ -88,8 +88,8 @@ const Projects = () => {
         </ChildHolder>
       </IndividualProject>
       <ProjectWrapperChild>
-        <IndividualProject reverse>
-          <ChildHolder>
+        <IndividualProject reverse >
+          <ChildHolder rev="rev">
             <ProjectDiscription>
               <h2>GreekTrust_E-commerce</h2>
               <h5>Description :</h5>
@@ -125,8 +125,17 @@ const Projects = () => {
           </ChildHolder>
         </IndividualProject>
 
-        <IndividualProject reverse>
+        <IndividualProject>
           <ChildHolder>
+            
+
+            <ChildImageWrapper
+              href="https://rct211-tripoto-clone.netlify.app/"
+              target="_blank"
+            >
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/201858980-a1544fe6-368e-4df6-a223-ef2b76112593.png"></CoverImage>
+            </ChildImageWrapper>
+
             <ProjectDiscription>
               <h2>Tripoto_Clone</h2>
               <h5>Description :</h5>
@@ -151,26 +160,12 @@ const Projects = () => {
                 </a>
               </ButtonHolder>
             </ProjectDiscription>
-
-            <ChildImageWrapper
-              href="https://rct211-tripoto-clone.netlify.app/"
-              target="_blank"
-            >
-              <CoverImage src="https://user-images.githubusercontent.com/105931703/201858980-a1544fe6-368e-4df6-a223-ef2b76112593.png"></CoverImage>
-            </ChildImageWrapper>
           </ChildHolder>
         </IndividualProject>
 
-        <IndividualProject>
-          <ChildHolder>
-            <ChildImageWrapper
-              href=" https://fitness-blender.netlify.app"
-              target="_blank"
-            >
-              <CoverImage src="./images/fitness_blender/landing.png"></CoverImage>
-            </ChildImageWrapper>
-
-            <ProjectDiscription>
+        <IndividualProject reverse >
+          <ChildHolder rev="rev">
+          <ProjectDiscription>
               <h2>Fitness_Blender_Clone</h2>
               <h5>Description :</h5>
               <p>
@@ -194,6 +189,14 @@ const Projects = () => {
                 </a>
               </ButtonHolder>
             </ProjectDiscription>
+            <ChildImageWrapper
+              href=" https://fitness-blender.netlify.app"
+              target="_blank"
+            >
+              <CoverImage src="./images/fitness_blender/landing.png"></CoverImage>
+            </ChildImageWrapper>
+
+            
           </ChildHolder>
         </IndividualProject>
 
@@ -239,8 +242,8 @@ const Projects = () => {
           </ChildHolder>
         </IndividualProject>
 
-        <IndividualProject reverse>
-          <ChildHolder>
+        <IndividualProject reverse >
+          <ChildHolder rev="rev">
             <ProjectDiscription>
               <h2>S Sense_Clone</h2>
               <h5>Description :</h5>
