@@ -56,10 +56,10 @@ margin:auto;
 
 export const IndividualProject = styled.div`
   box-sizing: border-box;
+  margin:auto;
   margin-top:45px;
   background: linear-gradient(to top,teal ,black 70%);
-  background-clip: text;
- 
+
 `;
 
 export const ButtonHolder = styled.div`
@@ -99,7 +99,9 @@ a{
 
 export const ProjectDiscription = styled.div`
   text-align:left;
-  
+  padding-left:20px;
+  width:52%;
+  height:100%;
   h2{
     font-family:"poppins",monospace;
     font-size:22px;
@@ -128,40 +130,62 @@ export const ProjectDiscription = styled.div`
     letter-spacing:0.6px; 
   }
 
-  @media (max-width:${({theme})=>theme.mobile}){
+  @media (max-width:1024px){
       margin-top:40px;
+     width:100%;
+     padding-left:0px;
    }
 `;
 
 export const CoverImage=styled.img`
-  opacity: 90%;
-  border-radius: 12px;
-  height:330px;
-  width:95%;
+  height:100%;
+  width:100%;
+  border-radius:8px;
+  @media all and (max-width:1024px) and (min-width:769px){
+   
+}
+
+
+@media all and (max-width:768px) and (min-width:481px){
+}
+
+@media all and (max-width:480px) and (min-width:279px){
+
+}
  
 `
 
 
 export const ChildImageWrapper=styled.a`
-    padding:10px;
-    width:98%;
-  
-   & :hover{
-    animation:${Divmover} 1s ease-in-out ;
-  }
-
+    width:48%;
+    height:100%;
+    & :hover{
+      padding:5px;
+    }
+    @media (max-width:1050px){
+     width:100%;
+  };
  
 `
 
 export const ChildHolder=styled.div`
+   margin:auto;
    display:flex;
+   padding:10px;
+   gap:20px;
+   height:400px;
    box-sizing: border-box;
    align-items: center;
-   width:90%;
-   margin:auto;
+   width:100%;
+   justify-content: space-between;
+ 
+   
    @media (max-width:1050px){
     flex-direction:column;
       width:90%;
+      height:auto;
+      gap:0px;
+      padding:0px;
       text-align:center;
   };
   

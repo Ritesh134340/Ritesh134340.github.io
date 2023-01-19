@@ -47,7 +47,7 @@ const Contact = () => {
       <input type="email" name="user_email" placeholder="Your email" />
    
       <textarea name="message" placeholder="Type your message..." />
-      <button type="submit" value="Send">{loading?"Sending...":"Submit"}</button>
+      <button  type="submit" value="Send">{loading?"Sending...":"Submit"}</button>
       
         </InputWrapper>
       

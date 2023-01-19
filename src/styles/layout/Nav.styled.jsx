@@ -18,7 +18,7 @@ const navItemAnimation = ({ index }) => css`
 
 export const Nav = styled.nav`
   height: 85px;
-  width: 98%;
+  width: 100vw;
   padding-right:15px;
   background: rgb(2, 12, 27, 1);
   display: flex;
@@ -57,6 +57,7 @@ export const MenuIcon = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: inline-block;
     right:6%;
+    
   }
 `;
 
@@ -109,6 +110,7 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: flex-start;
   font-size: 14px;
+ 
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;

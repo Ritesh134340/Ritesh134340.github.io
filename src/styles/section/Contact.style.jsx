@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 export const  ContactWrapper=styled.div`
    border:1px solid transparent;
+  
 
    background:linear-gradient(
    to right,
@@ -11,7 +12,7 @@ export const  ContactWrapper=styled.div`
  ), url("./images/contact.png") ;
     background-image: fit;
     background-size: 65%;
-   
+  
   h1{
    text-transform:uppercase;
    padding-top:15px;
@@ -124,11 +125,26 @@ width:27%;
 margin-left:30px;
 margin-right:30px;
 border:1px solid red;
-@media (max-width:${({theme})=>theme.mobile}){
+@media all and (max-width:1024px) and (min-width:769px){
+   
+  width:40%;
+  padding:5px;
+}
+
+
+@media all and (max-width:768px) and (min-width:481px){
    width:80%; 
 }
 
+@media all and (max-width:480px) and (min-width:279px){
+   width:90%; 
+   padding:10px;
+}
+
+
+
   background-color:rgba(255,255,255,0.9);
+  
   margin:auto;
   border:2px solid black;
   border-radius:13px;
