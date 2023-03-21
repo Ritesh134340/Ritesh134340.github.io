@@ -22,27 +22,36 @@ border-right:4px solid rgba(255,255,255,1);
 
 export const StyledHeroSection=styled.section`
  width:100%;
- height:70vh;
+ height:auto;
  background:linear-gradient(
    135deg,
    rgba(8,64,77,0.9) 0%,
    rgba(2,12,27,0.8) 20%
  ), url("./images/bg1.jpg") center no-repeat;
- background-size:fill;
- position:relative;
- display:flex;
+ background-size:cover;
+ background-position:center;
  align-items:center;
  justify-content:center;
  text-align:center; 
- margin-top:80px; 
+
 `
 
 export const HeroContent=styled.div`
-width:95%;
 margin:auto;
 color:${({theme})=>theme.colors.white};
 text-transform:uppercase;
 text-align: center;
+padding-top:20px;
+padding-bottom:30px;
+.cta-wrapper{
+
+  margin-top:50px;
+  height:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+}
 h1{
   letter-spacing:1.2rem;
   font-size:2rem;
@@ -55,11 +64,9 @@ h1{
   border-right:4px solid rgba(255,255,255,1)
 }
 h5{
-  margin-top:-50px;
- padding-bottom:25px;
-  font-size:17px;
+  
+ font-size:17px;
  
-
 }
 
 p{
@@ -72,6 +79,10 @@ div{
 }
 
 @media (max-width: ${({theme})=>theme.mobile}){
+  .cta-wrapper{
+    gap:20px;
+    margin-top:30px;
+  }
  
 h1{
   letter-spacing:1rem;
@@ -86,7 +97,9 @@ p{
   font-size:1.3rem;
 }
 h5{
-  display:none;
+  font-size:10px;
+  font-weight:500;
+
 }
 }
 `;
@@ -100,12 +113,10 @@ h5{
  }
 `;
 export const AnimatedGradientText = styled.h3`
+   margin-bottom:40px;
   color:${({theme})=>theme.colors.orange};
   font-size:4rem;
-  margin-top:10px;
-  /* margin:1.5rem 0; */
-  /* margin-left:2%;
-  margin-right:2%; */
+  margin-top:15px;
   background-image: -webkit-linear-gradient(92deg, ${({theme})=>theme.colors.purple},${({theme})=>theme.colors.white});
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -114,13 +125,10 @@ export const AnimatedGradientText = styled.h3`
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-feature-settings: "kern";
   font-weight: 500;
-  margin-bottom: 80px;
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: grayscale;
   @media (max-width: ${({theme})=>theme.mobile}){
-
   margin-bottom:60px;
   
- 
  }
 `;

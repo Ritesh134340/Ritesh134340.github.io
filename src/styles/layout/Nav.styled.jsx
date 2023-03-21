@@ -18,7 +18,7 @@ const navItemAnimation = ({ index }) => css`
 
 export const Nav = styled.nav`
   height: 85px;
-  width: 100vw;
+  width: 100%;
   padding-right:15px;
   background: rgb(2, 12, 27, 1);
   display: flex;
@@ -29,9 +29,9 @@ export const Nav = styled.nav`
   transition: all 1s ease-in-out;
   position: fixed;
   top: 40px;
+
   @media (max-width: ${({ theme }) => theme.mobile}) {
-   width:97%;
-   
+   width:100%;
   }
 `;
 
@@ -115,6 +115,7 @@ export const NavList = styled.ul`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
     height: 100vh;
+   
 
     background: ${({ theme }) => theme.colors.lightNavyBlue};
     position: fixed;

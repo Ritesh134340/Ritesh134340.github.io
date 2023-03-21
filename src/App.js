@@ -21,6 +21,7 @@ function App() {
     <GlobalStyles/>
      <TopBanner/>
      <Navbar/>
+     <div style={{marginTop:"125px"}}>
      <HeroSection/>
      <About/>
      <Projects/>
@@ -29,6 +30,8 @@ function App() {
      <Contact/>
      <Scroll/>
      <Follow/>
+     </div>
+    
     </ThemeProvider>
     </>
     

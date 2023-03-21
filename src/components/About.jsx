@@ -4,9 +4,9 @@ import { AboutHeader, AboutWrapper, ImageWrapper, ParaWrapper } from "../styles/
 const About = () => {
   return (
     <div div id="about">
-     <AboutHeader>Let's Know Me</AboutHeader>
+    <AboutHeader>About Me</AboutHeader>
     <AboutWrapper >
-     
+    
       <ImageWrapper>
       <img src="../images/profile.png"></img>
       <h1>Ritesh Kumar</h1>

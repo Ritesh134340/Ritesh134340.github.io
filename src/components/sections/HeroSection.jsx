@@ -11,7 +11,7 @@ export const HeroSection=()=>{
         <h5 >Team Work | Time Management | Leadership | Communication </h5>
         
 
-        <div>
+        <div className="cta-wrapper">
             <CTAButton href="#projects">Projects</CTAButton>
             <CTAButton href="#contact" primary margin="0 0 0 20px">Hire Me</CTAButton>
         </div>

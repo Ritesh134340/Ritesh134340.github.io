@@ -1,4 +1,25 @@
 import React from "react";
+import {SiFirebase} from "react-icons/si"
+import {GrReactjs} from "react-icons/gr"
+import {SiRedux} from "react-icons/si"
+import {SiReactrouter} from "react-icons/si"
+import {SiAmazonaws} from "react-icons/si"
+import {SiStyledcomponents} from "react-icons/si"
+import {AiOutlineGoogle} from "react-icons/ai"
+import {SiNetlify} from "react-icons/si"
+import {BiLineChart} from "react-icons/bi"
+import {SiJsonwebtokens} from "react-icons/si"
+import {SiSlickpic} from "react-icons/si"
+import {TbBrandJavascript} from "react-icons/tb"
+import {SiExpress} from "react-icons/si"
+import {RiHtml5Line} from "react-icons/ri"
+import {FaCss3} from "react-icons/fa"
+import {FaNodeJs} from "react-icons/fa"
+import {SiMongodb} from "react-icons/si"
+import {SiPassport} from "react-icons/si"
+import {SiMinutemailer} from "react-icons/si"
+import {AiOutlineYoutube} from "react-icons/ai"
+import {ImFacebook2} from "react-icons/im"
 import {
   ButtonHolder,
   ChildHolder,
@@ -12,10 +33,153 @@ import {
 
 const Projects = () => {
   return (
-    <ProjectWrapper id="projects">
+    <>
+     <ProjectWrapper id="projects">
       <h1>PROJECTS</h1>
       <h4></h4>
-      <IndividualProject  reverse>
+      </ProjectWrapper>
+
+     
+      
+      <ProjectWrapperChild>
+
+      <IndividualProject>
+        <ChildHolder>
+          <ChildImageWrapper>
+          
+            <a href="https://amazingrecipe.in"
+            target="_blank">
+
+            <CoverImage  src="https://user-images.githubusercontent.com/105931703/226233064-dbedd050-6e9f-4c41-af08-795ba281a6c0.png">
+            </CoverImage>
+            </a>
+
+              <div className="diagram-wrapper">
+                <h3>Flow Diagram</h3>
+                  <img src="https://user-images.githubusercontent.com/105931703/224886457-e3d0a73b-e71d-4ffc-a804-c9c446247d0d.svg" alt="chart" />
+              </div>
+             
+        
+           
+          </ChildImageWrapper>
+
+          <ProjectDiscription>
+            <h2>Amazing Recipe</h2>
+            <h5>Description :</h5>
+            <p>
+            Welcome to Amazing Recipe ! Our site is powered by the MERN stack, and we utilize the YouTube API to bring you the latest and most popular recipe videos on the web.
+            </p>
+            <p> As a user, you can create an account, sign in,watch and start adding your favorite videos to your personal list. Our user-friendly interface makes it easy to find and save the content you love.</p>
+           
+            <div className="credential-wrapper">
+              <h5>Admin Credentials :</h5>
+            <p style={{marginTop:"5px",paddingBottom:"0px",fontSize:"15px"}}>Email : <span> admin@recipe.com </span> </p>
+            <p style={{marginTop:"0px",fontSize:"15px"}}>
+           Password : <span>admin@recipe</span> 
+            </p>
+
+              </div>
+            <h5>Tech-Stack</h5>
+             <div className="tech-stack-wrapper">
+             <div>
+                <p>AWS</p>
+                <SiAmazonaws/>
+              </div>
+              <div>
+                <p>ReactJS</p>
+                <GrReactjs/>
+              </div>
+              <div>
+                <p>Redux</p>
+                <SiRedux/>
+              </div>
+              <div>
+                <p>Router</p>
+                <SiReactrouter/>
+              </div>
+             <div>
+              <p>YoutubeApi</p>
+              <AiOutlineYoutube/>
+             </div>
+             <div>
+              <p>FacebookApi</p>
+              <ImFacebook2/>
+             </div>
+             <div>
+              <p>GoogleApi</p>
+              <AiOutlineGoogle/>
+             </div>
+              <div>
+                <p>Styled Com</p>
+                <SiStyledcomponents/>
+              </div>
+        
+              <div>
+                <p>Slick</p>
+                <SiSlickpic/>
+              </div>
+              <div>
+                <p>Javascript</p>
+                <TbBrandJavascript/>
+              </div>
+              <div>
+                <p>Html</p>
+                <RiHtml5Line/>
+              </div>
+              <div>
+                <p>Css</p>
+                <FaCss3/>
+              </div>
+              <div>
+                <p>NodeJS</p>
+                <FaNodeJs/>
+              </div>
+              <div>
+                <p>MongoDB</p>
+                <SiMongodb/>
+              </div>
+              <div>
+                <p>Express</p>
+                <SiExpress/>
+              </div>
+              <div>
+                <p>JWT</p>
+                <SiJsonwebtokens/>
+              </div>
+              <div>
+                <p>Firebase</p>
+                <SiFirebase/>
+              </div>
+              <div>
+                <p>NodeMailer</p>
+                <SiMinutemailer/>
+              </div>
+
+              <div>
+                <p>PassportJS</p>
+                <SiPassport/>
+              </div>
+            
+             </div>
+         
+            <ButtonHolder>
+              <a
+                href="https://github.com/Ritesh134340/Recipe_Client_Side"
+                target="_blank"
+              >
+                Code
+              </a>
+              <a href="https://amazingrecipe.in" target="_blank">
+                View
+              </a>
+            </ButtonHolder>
+          </ProjectDiscription>
+         
+        </ChildHolder>
+       
+      </IndividualProject>
+
+      <IndividualProject reverse>
         <ChildHolder rev="rev">
           <ProjectDiscription>
             <h2>TodoApplication</h2>
@@ -29,9 +193,67 @@ const Projects = () => {
             </p>
 
             <h5>Tech-Stack</h5>
-            <h6>
-              REACT | REDUX | PASSPORTJS | CHARTJS | STYLEDCOMPONENT | MONGODB
-            </h6>
+            <div className="tech-stack-wrapper">
+             <div>
+                <p>Netlify</p>
+                <SiNetlify/>
+              </div>
+            
+              <div>
+                <p>ReactJS</p>
+                <GrReactjs/>
+              </div>
+              <div>
+                <p>Redux</p>
+                <SiRedux/>
+              </div>
+              <div>
+                <p>Router</p>
+                <SiReactrouter/>
+              </div>
+             
+              <div>
+                <p>Styled Com</p>
+                <SiStyledcomponents/>
+              </div>
+             <div>
+              <p>ChartJs</p>
+              <BiLineChart/>
+             </div>
+              <div>
+                <p>Javascript</p>
+                <TbBrandJavascript/>
+              </div>
+              <div>
+                <p>Html</p>
+                <RiHtml5Line/>
+              </div>
+              <div>
+                <p>Css</p>
+                <FaCss3/>
+              </div>
+              <div>
+                <p>NodeJS</p>
+                <FaNodeJs/>
+              </div>
+              <div>
+                <p>MongoDB</p>
+                <SiMongodb/>
+              </div>
+              <div>
+                <p>Express</p>
+                <SiExpress/>
+              </div>
+              <div>
+                <p>JWT</p>
+                <SiJsonwebtokens/>
+              </div>
+              <div>
+                <p>PassportJS</p>
+                <SiPassport/>
+              </div>
+            
+             </div>
             <ButtonHolder>
               <a href="https://github.com/Ritesh134340/Mern_todo_application">
                 Code
@@ -46,7 +268,7 @@ const Projects = () => {
             href="https://todoapplicationmern.netlify.app/"
             target="_blank"
           >
-            <CoverImage src="https://user-images.githubusercontent.com/105931703/213341996-37f302a6-6282-448b-8667-6cc60fc86030.png"></CoverImage>
+            <CoverImage src="https://user-images.githubusercontent.com/105931703/226313396-66daa637-80e4-414a-88f3-162c48252e68.png"></CoverImage>
           </ChildImageWrapper>
         </ChildHolder>
       </IndividualProject>
@@ -57,7 +279,8 @@ const Projects = () => {
             href="https://naukri12345.netlify.app/"
             target="_blank"
           >
-            <CoverImage src="https://user-images.githubusercontent.com/105931703/201856774-9736373d-5cf7-487e-a69f-48282f2ef351.png"></CoverImage>
+            <CoverImage src="https://user-images.githubusercontent.com/105931703/226314028-7d81f5ec-a6de-4f11-9430-ad83bc3af1ea.png
+"></CoverImage>
           </ChildImageWrapper>
 
           <ProjectDiscription>
@@ -87,8 +310,8 @@ const Projects = () => {
           </ProjectDiscription>
         </ChildHolder>
       </IndividualProject>
-      <ProjectWrapperChild>
-        <IndividualProject reverse >
+
+        <IndividualProject reverse>
           <ChildHolder rev="rev">
             <ProjectDiscription>
               <h2>GreekTrust_E-commerce</h2>
@@ -120,20 +343,18 @@ const Projects = () => {
               href="https://greektrustecommerce.netlify.app/product"
               target="_blank"
             >
-              <CoverImage src="https://user-images.githubusercontent.com/105931703/213372419-7a8080f5-5f8a-4666-a4d0-c72c309c3545.png"></CoverImage>
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226314801-6bbcc6b9-25fd-43ce-8e56-cb7834f81133.png"></CoverImage>
             </ChildImageWrapper>
           </ChildHolder>
         </IndividualProject>
 
         <IndividualProject>
           <ChildHolder>
-            
-
             <ChildImageWrapper
               href="https://rct211-tripoto-clone.netlify.app/"
               target="_blank"
             >
-              <CoverImage src="https://user-images.githubusercontent.com/105931703/201858980-a1544fe6-368e-4df6-a223-ef2b76112593.png"></CoverImage>
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226315395-3b04e661-41ad-4925-b17c-97c6fca8832a.png"></CoverImage>
             </ChildImageWrapper>
 
             <ProjectDiscription>
@@ -163,9 +384,9 @@ const Projects = () => {
           </ChildHolder>
         </IndividualProject>
 
-        <IndividualProject reverse >
+        <IndividualProject reverse>
           <ChildHolder rev="rev">
-          <ProjectDiscription>
+            <ProjectDiscription>
               <h2>Fitness_Blender_Clone</h2>
               <h5>Description :</h5>
               <p>
@@ -193,10 +414,8 @@ const Projects = () => {
               href=" https://fitness-blender.netlify.app"
               target="_blank"
             >
-              <CoverImage src="./images/fitness_blender/landing.png"></CoverImage>
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226316192-08aa4be7-ac14-4e5f-990a-c29ea5f906af.png"></CoverImage>
             </ChildImageWrapper>
-
-            
           </ChildHolder>
         </IndividualProject>
 
@@ -206,7 +425,7 @@ const Projects = () => {
               href="https://weather-application1343.netlify.app/"
               target="_blank"
             >
-              <CoverImage src="https://user-images.githubusercontent.com/105931703/213369881-4a6a635d-4931-45e3-b9a9-aea2d89292c2.png"></CoverImage>
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226317107-61751c64-b5cd-4f35-bef5-d92a9890bf5a.png"></CoverImage>
             </ChildImageWrapper>
 
             <ProjectDiscription>
@@ -242,7 +461,7 @@ const Projects = () => {
           </ChildHolder>
         </IndividualProject>
 
-        <IndividualProject reverse >
+        <IndividualProject reverse>
           <ChildHolder rev="rev">
             <ProjectDiscription>
               <h2>S Sense_Clone</h2>
@@ -275,7 +494,7 @@ const Projects = () => {
               href="https://suraj-996.github.io/ssense_unit2_project/"
               target="_blank"
             >
-              <CoverImage src="./images/s_sense/landing.png"></CoverImage>
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226317654-c704ea5a-41ef-4382-bd53-a7391ff9fb85.png"></CoverImage>
             </ChildImageWrapper>
           </ChildHolder>
         </IndividualProject>
@@ -286,7 +505,7 @@ const Projects = () => {
               href="https://spicy-representative-2917.vercel.app"
               target="_blank"
             >
-              <CoverImage src="./images/expedia/landing.png"></CoverImage>
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226318157-73602b9b-4971-4a87-b4cd-c6a4251fc665.png"></CoverImage>
             </ChildImageWrapper>
 
             <ProjectDiscription>
@@ -317,8 +536,13 @@ const Projects = () => {
             </ProjectDiscription>
           </ChildHolder>
         </IndividualProject>
+
+
+
       </ProjectWrapperChild>
-    </ProjectWrapper>
+    </>
+   
+   
   );
 };
 

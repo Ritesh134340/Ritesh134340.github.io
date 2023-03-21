@@ -15,8 +15,8 @@ const Divmover=keyframes`
 `
 
 export const ProjectWrapper = styled.div`
-  line-height: 35px;
-   
+  margin-bottom:30px;
+  padding-bottom:35px;
   h1{
    
     color: white;
@@ -30,7 +30,6 @@ export const ProjectWrapper = styled.div`
     height:5px;
     width:50%;
     margin:auto;
-  
      background:linear-gradient(to right,black,white,black);
     color: white;
     font-family: monospace;
@@ -49,43 +48,33 @@ export const ProjectWrapper = styled.div`
 `;
 
 export const ProjectWrapperChild = styled.div`
-margin:auto;
-    margin-top:70px;
-    
+ margin:auto;
 `;
 
 export const IndividualProject = styled.div`
   box-sizing: border-box;
   margin:auto;
-  margin-top:45px;
-  background: linear-gradient(to top,teal ,black 70%);
-
 `;
 
 export const ButtonHolder = styled.div`
 margin:auto;
 box-sizing: border-box;
 display:flex;
-width:55%;
-justify-content: space-evenly;
+justify-content: center;
+gap:20px;
 align-items: center;
-margin-top:35px;
-margin-bottom:25px;
-@media (max-width:${({theme})=>theme.mobile}){
-     width:90%;
-   }
+margin-top:30px;
+
+
 a{
-  padding:4px 35px;
-  border-radius:8px;
+  padding:8px 20px;
+  border-radius:5px;
   text-decoration:none;
   color:white;
   font-weight:bold;
-  margin-left:10px;
   box-sizing: border-box;
   background-color: ${({theme})=>theme.colors.green};
   font-size:17px;
-  
- 
 }
 & :hover{
       cursor:pointer;
@@ -98,26 +87,64 @@ a{
 `;
 
 export const ProjectDiscription = styled.div`
+ 
   text-align:left;
-  padding-left:20px;
-  width:52%;
+  flex:1;
   height:100%;
+
+  .tech-stack-wrapper{
+
+    display:flex;
+    margin-top:13px;
+    padding-bottom:30px;
+  
+    flex-wrap:wrap;
+    gap:25px;
+    align-items:center;
+    justify-content:center;
+    row-gap:22px;
+    
+  }
+  .tech-stack-wrapper>div{
+    font-size:30px;
+    text-align:center;
+    padding:0px 6px;
+    color:orange
+  }
+  .tech-stack-wrapper>div>p{
+    font-size:15px;
+    color:white;
+  }
+
+  .credential-wrapper>h5{
+    color:wheat;
+    margin-top:15px;
+  }
+   
+  .credential-wrapper p>span{
+    color:red;
+    font-size:13px;
+  }
+ 
   h2{
     font-family:"poppins",monospace;
-    font-size:22px;
+    font-size:20px;
     letter-spacing:0.7px;
     color:wheat;
+    margin-bottom:10px;
 
   }
   h5{
-    font-size:20px;
+    font-size:18px;
     font-family:"poppins",monospace;
+    margin-top:15px;
+    margin-bottom:10px;
     letter-spacing:0.6px;
 
   }
   p{
     padding-top:3px;
-    font-size:16px;
+    font-size:15px;
     line-height:23px;
     font-family:"poppins",monospace;
     letter-spacing:0.6px;
@@ -131,7 +158,7 @@ export const ProjectDiscription = styled.div`
   }
 
   @media (max-width:1024px){
-      margin-top:40px;
+     margin-top:5px;
      width:100%;
      padding-left:0px;
    }
@@ -157,11 +184,27 @@ export const CoverImage=styled.img`
 
 
 export const ChildImageWrapper=styled.a`
-    width:48%;
     height:100%;
-    & :hover{
-      padding:5px;
-    }
+    width:55%;
+
+    
+  .diagram-wrapper{
+    margin-top:18px;
+   
+  }
+  .diagram-wrapper>h3{
+    text-align:center;
+    font-family:sans-serif;
+    font-size:18px;
+    padding-bottom:8px;
+  }
+  .diagram-wrapper>img{
+    width:100%;
+    height:100%;
+    border-radius:5px;
+  
+  }
+   
     @media (max-width:1050px){
      width:100%;
   };
@@ -171,21 +214,22 @@ export const ChildImageWrapper=styled.a`
 export const ChildHolder=styled.div`
    margin:auto;
    display:flex;
-   padding:10px;
-   gap:20px;
-   height:400px;
+   gap:18px;
+   align-items:center;
+   padding:15px 10px;
+   margin-bottom:38px;
    box-sizing: border-box;
-   align-items: center;
    width:100%;
-   justify-content: space-between;
+   justify-content:space-between;
+   background:linear-gradient(to bottom , teal , black)
  
-   
+   ;
    @media (max-width:1050px){
     flex-direction:${(props)=>props.rev==="rev" ? "column-reverse":"column"};
-      width:90%;
+      width:100%;
       height:auto;
       gap:0px;
-      padding:0px;
+      padding:5px;
       text-align:center;
   };
   

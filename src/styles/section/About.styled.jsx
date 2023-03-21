@@ -31,25 +31,29 @@ export const AboutWrapper=styled.div`
 color:white;
 border-radius:3px;
 margin:auto;
+margin-bottom:35px;
 display:flex;
 align-items: center;
 font-family:"poppins",monospace;
-justify-content:center;
+padding-left:30px;
+gap:30px;
+width:70%;
 box-sizing: border-box;
+
 & :hover{
     color:white;
 }
 @media (max-width:${({theme})=>theme.mobile}){
     flex-direction:column;
+    width:100%;
+    padding-left:0px;
 }
    
 `
 
 export const ImageWrapper=styled.div`
  text-align:center;
- padding:15px;
  color:white;
- margin-bottom:30px;
  
  @media (max-width:${({theme})=>theme.mobile}){
 
@@ -63,15 +67,7 @@ h1{
 `
 
 export const ParaWrapper=styled.div`
-    width:50%;
-    margin-left:30px;
-    margin-left:80px;
-    margin-bottom:30px;
-    padding:15px;
-   @media (max-width:${({theme})=>theme.mobile}){
-    width:90%;
-    margin:0px;
-   }
+  
     p{
          color:white;
         font-family:"poppins",monospace;
@@ -96,7 +92,10 @@ export const ParaWrapper=styled.div`
         margin-left:20px;
         
     }
-   
+    @media (max-width:${({theme})=>theme.mobile}){
+    width:90%;
+    margin:0px;
+   }
 
 `
 
@@ -107,7 +106,7 @@ export const AboutHeader=styled.h1`
    width:200px;
    border-bottom:3px solid;
    margin:auto;
-   margin-bottom:35px;
+   margin-bottom:15px;
    padding:10px 5px;
    color:${({theme})=>theme.colors.orange}
 
