@@ -29,36 +29,50 @@ const waving=keyframes`
 
 export const AboutWrapper=styled.div`
 color:white;
-border-radius:3px;
 margin:auto;
 margin-bottom:35px;
 display:flex;
 align-items: center;
 font-family:"poppins",monospace;
-padding-left:30px;
 gap:30px;
-width:70%;
+padding:0px 20px;
 box-sizing: border-box;
+.certificate-wrapper{
+  box-sizing:border-box;
+  margin:auto;
+  flex:1
+}
+.certificate-wrapper>img{
+  width:100%
+}
+.certificate-wrapper>h2{
+  margin-bottom:10px;
+  text-align:center;
+  color:gray;
+}
 
-& :hover{
-    color:white;
+.about-left{
+   width:45%
 }
 @media (max-width:${({theme})=>theme.mobile}){
     flex-direction:column;
     width:100%;
-    padding-left:0px;
+    .about-left{
+      width:100%;
+    }
+    .certificate-wrapper{
+   margin-top:30px;
+}
 }
    
 `
 
 export const ImageWrapper=styled.div`
  text-align:center;
- color:white;
+ color:gray;
  
  @media (max-width:${({theme})=>theme.mobile}){
-
-   margin:0px;
-   margin-top:0px;
+  margin-top:15px;
 }
 h1{
   margin-top:-30px;
@@ -67,34 +81,35 @@ h1{
 `
 
 export const ParaWrapper=styled.div`
-  
+ 
     p{
          color:white;
         font-family:"poppins",monospace;
-         font-size:17px;
-         margin-top:13px;
+         font-size:13px;
+         margin-top:18px;
+         word-wrap:break-word;
          letter-spacing:0.6px;
-         line-height:25px;
-         text-align:left;
+        
      
     }
 
     h1{
         display:inline-block;
          color:white;
-         font-size:45px;
+         font-size:35px;
          animation:${waving} 2.5s infinite ; 
          transform-origin:70% 70%;  
     }
      span{
-        font-size:25px;
+        font-size:22px;
         letter-spacing: 0.7px;
-        margin-left:20px;
+        margin-left:10px;
+        color:yellow;
         
     }
     @media (max-width:${({theme})=>theme.mobile}){
-    width:90%;
-    margin:0px;
+    width:100%;
+     margin-top:30px;
    }
 
 `
@@ -106,10 +121,14 @@ export const AboutHeader=styled.h1`
    width:200px;
    border-bottom:3px solid;
    margin:auto;
-   margin-bottom:15px;
-   padding:10px 5px;
-   color:${({theme})=>theme.colors.orange}
+   margin-bottom:35px;
+   padding:0px 0px 10px 0px;
 
+   color:${({theme})=>theme.colors.orange}
+   @media (max-width:${({theme})=>theme.mobile}){
+    text-align:center
+  
+   }
   
 `
 

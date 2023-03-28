@@ -1,25 +1,25 @@
 import React from "react";
-import {SiFirebase} from "react-icons/si"
-import {GrReactjs} from "react-icons/gr"
-import {SiRedux} from "react-icons/si"
-import {SiReactrouter} from "react-icons/si"
-import {SiAmazonaws} from "react-icons/si"
-import {SiStyledcomponents} from "react-icons/si"
-import {AiOutlineGoogle} from "react-icons/ai"
-import {SiNetlify} from "react-icons/si"
-import {BiLineChart} from "react-icons/bi"
-import {SiJsonwebtokens} from "react-icons/si"
-import {SiSlickpic} from "react-icons/si"
-import {TbBrandJavascript} from "react-icons/tb"
-import {SiExpress} from "react-icons/si"
-import {RiHtml5Line} from "react-icons/ri"
-import {FaCss3} from "react-icons/fa"
-import {FaNodeJs} from "react-icons/fa"
-import {SiMongodb} from "react-icons/si"
-import {SiPassport} from "react-icons/si"
-import {SiMinutemailer} from "react-icons/si"
-import {AiOutlineYoutube} from "react-icons/ai"
-import {ImFacebook2} from "react-icons/im"
+import { SiFirebase } from "react-icons/si";
+import { GrReactjs } from "react-icons/gr";
+import { SiRedux } from "react-icons/si";
+import { SiReactrouter } from "react-icons/si";
+import { SiAmazonaws } from "react-icons/si";
+import { SiStyledcomponents } from "react-icons/si";
+import { AiOutlineGoogle } from "react-icons/ai";
+import { SiNetlify } from "react-icons/si";
+import { BiLineChart } from "react-icons/bi";
+import { SiJsonwebtokens } from "react-icons/si";
+import { SiSlickpic } from "react-icons/si";
+import { TbBrandJavascript } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
+import { RiHtml5Line } from "react-icons/ri";
+import { FaCss3 } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiPassport } from "react-icons/si";
+import { SiMinutemailer } from "react-icons/si";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { ImFacebook2 } from "react-icons/im";
 import {
   ButtonHolder,
   ChildHolder,
@@ -34,282 +34,291 @@ import {
 const Projects = () => {
   return (
     <>
-     <ProjectWrapper id="projects">
-      <h1>PROJECTS</h1>
-      <h4></h4>
+      <ProjectWrapper id="projects">
+        <h1>PROJECTS</h1>
+        <h4></h4>
       </ProjectWrapper>
 
-     
-      
       <ProjectWrapperChild>
-
-      <IndividualProject>
-        <ChildHolder>
-          <ChildImageWrapper>
-          
-            <a href="https://amazingrecipe.in"
-            target="_blank">
-
-            <CoverImage  src="https://user-images.githubusercontent.com/105931703/226233064-dbedd050-6e9f-4c41-af08-795ba281a6c0.png">
-            </CoverImage>
-            </a>
+        <IndividualProject>
+          <ChildHolder>
+            <ChildImageWrapper>
+              <a href="https://amazingrecipe.in" target="_blank">
+                <CoverImage src="https://user-images.githubusercontent.com/105931703/226233064-dbedd050-6e9f-4c41-af08-795ba281a6c0.png"></CoverImage>
+              </a>
 
               <div className="diagram-wrapper">
                 <h3>Flow Diagram</h3>
-                  <img src="https://user-images.githubusercontent.com/105931703/224886457-e3d0a73b-e71d-4ffc-a804-c9c446247d0d.svg" alt="chart" />
+                <img
+                  src="https://user-images.githubusercontent.com/105931703/224886457-e3d0a73b-e71d-4ffc-a804-c9c446247d0d.svg"
+                  alt="chart"
+                />
               </div>
-             
-        
-           
-          </ChildImageWrapper>
+            </ChildImageWrapper>
 
-          <ProjectDiscription>
-            <h2>Amazing Recipe</h2>
-            <h5>Description :</h5>
-            <p>
-            Welcome to Amazing Recipe ! Our site is powered by the MERN stack, and we utilize the YouTube API to bring you the latest and most popular recipe videos on the web.
-            </p>
-            <p> As a user, you can create an account, sign in,watch and start adding your favorite videos to your personal list. Our user-friendly interface makes it easy to find and save the content you love.</p>
-           
-            <div className="credential-wrapper">
-              <h5>Admin Credentials :</h5>
-            <p style={{marginTop:"5px",paddingBottom:"0px",fontSize:"15px"}}>Email : <span> admin@recipe.com </span> </p>
-            <p style={{marginTop:"0px",fontSize:"15px"}}>
-           Password : <span>admin@recipe</span> 
-            </p>
+            <ProjectDiscription>
+              <h2>Amazing Recipe</h2>
+              <h5>Description :</h5>
+              <p>
+                Welcome to Amazing Recipe ! Our site is powered by the MERN
+                stack, and we utilize the YouTube API to bring you the latest
+                and most popular recipe videos on the web.
+              </p>
+              <p>
+                {" "}
+                As a user, you can create an account, sign in,watch and start
+                adding your favorite videos to your personal list. Our
+                user-friendly interface makes it easy to find and save the
+                content you love.
+              </p>
 
+              <div className="credential-wrapper">
+                <h5>Admin Credentials :</h5>
+                <p
+                  style={{
+                    marginTop: "5px",
+                    paddingBottom: "0px",
+                    fontSize: "15px",
+                  }}
+                >
+                  Email : <span> admin@recipe.com </span>{" "}
+                </p>
+                <p style={{ marginTop: "0px", fontSize: "15px" }}>
+                  Password : <span>admin@recipe</span>
+                </p>
               </div>
-            <h5>Tech-Stack</h5>
-             <div className="tech-stack-wrapper">
-             <div>
-                <p>AWS</p>
-                <SiAmazonaws/>
-              </div>
-              <div>
-                <p>ReactJS</p>
-                <GrReactjs/>
-              </div>
-              <div>
-                <p>Redux</p>
-                <SiRedux/>
-              </div>
-              <div>
-                <p>Router</p>
-                <SiReactrouter/>
-              </div>
-             <div>
-              <p>YoutubeApi</p>
-              <AiOutlineYoutube/>
-             </div>
-             <div>
-              <p>FacebookApi</p>
-              <ImFacebook2/>
-             </div>
-             <div>
-              <p>GoogleApi</p>
-              <AiOutlineGoogle/>
-             </div>
-              <div>
-                <p>Styled Com</p>
-                <SiStyledcomponents/>
-              </div>
-        
-              <div>
-                <p>Slick</p>
-                <SiSlickpic/>
-              </div>
-              <div>
-                <p>Javascript</p>
-                <TbBrandJavascript/>
-              </div>
-              <div>
-                <p>Html</p>
-                <RiHtml5Line/>
-              </div>
-              <div>
-                <p>Css</p>
-                <FaCss3/>
-              </div>
-              <div>
-                <p>NodeJS</p>
-                <FaNodeJs/>
-              </div>
-              <div>
-                <p>MongoDB</p>
-                <SiMongodb/>
-              </div>
-              <div>
-                <p>Express</p>
-                <SiExpress/>
-              </div>
-              <div>
-                <p>JWT</p>
-                <SiJsonwebtokens/>
-              </div>
-              <div>
-                <p>Firebase</p>
-                <SiFirebase/>
-              </div>
-              <div>
-                <p>NodeMailer</p>
-                <SiMinutemailer/>
+              <h5>Tech-Stack</h5>
+              <div className="tech-stack-wrapper">
+                <div>
+                  <p>AWS</p>
+                  <SiAmazonaws />
+                </div>
+                <div>
+                  <p>ReactJS</p>
+                  <GrReactjs />
+                </div>
+                <div>
+                  <p>Redux</p>
+                  <SiRedux />
+                </div>
+                <div>
+                  <p>Router</p>
+                  <SiReactrouter />
+                </div>
+                <div>
+                  <p>YoutubeApi</p>
+                  <AiOutlineYoutube />
+                </div>
+                <div>
+                  <p>FacebookApi</p>
+                  <ImFacebook2 />
+                </div>
+                <div>
+                  <p>GoogleApi</p>
+                  <AiOutlineGoogle />
+                </div>
+                <div>
+                  <p>Styled Com</p>
+                  <SiStyledcomponents />
+                </div>
+
+                <div>
+                  <p>Slick</p>
+                  <SiSlickpic />
+                </div>
+                <div>
+                  <p>Javascript</p>
+                  <TbBrandJavascript />
+                </div>
+                <div>
+                  <p>Html</p>
+                  <RiHtml5Line />
+                </div>
+                <div>
+                  <p>Css</p>
+                  <FaCss3 />
+                </div>
+                <div>
+                  <p>NodeJS</p>
+                  <FaNodeJs />
+                </div>
+                <div>
+                  <p>MongoDB</p>
+                  <SiMongodb />
+                </div>
+                <div>
+                  <p>Express</p>
+                  <SiExpress />
+                </div>
+                <div>
+                  <p>JWT</p>
+                  <SiJsonwebtokens />
+                </div>
+                <div>
+                  <p>Firebase</p>
+                  <SiFirebase />
+                </div>
+                <div>
+                  <p>NodeMailer</p>
+                  <SiMinutemailer />
+                </div>
+
+                <div>
+                  <p>PassportJS</p>
+                  <SiPassport />
+                </div>
               </div>
 
-              <div>
-                <p>PassportJS</p>
-                <SiPassport/>
-              </div>
-            
-             </div>
-         
-            <ButtonHolder>
-              <a
-                href="https://github.com/Ritesh134340/Recipe_Client_Side"
-                target="_blank"
-              >
-                Code
-              </a>
-              <a href="https://amazingrecipe.in" target="_blank">
-                View
-              </a>
-            </ButtonHolder>
-          </ProjectDiscription>
-         
-        </ChildHolder>
-       
-      </IndividualProject>
+              <ButtonHolder>
+                <a
+                  href="https://github.com/Ritesh134340/Recipe_Client_Side"
+                  target="_blank"
+                >
+                  Code
+                </a>
+                <a href="https://amazingrecipe.in" target="_blank">
+                  View
+                </a>
+              </ButtonHolder>
+            </ProjectDiscription>
+          </ChildHolder>
+        </IndividualProject>
 
-      <IndividualProject reverse>
-        <ChildHolder rev="rev">
-          <ProjectDiscription>
-            <h2>TodoApplication</h2>
-            <h5>Description :</h5>
-            <p>
-              This is TodoApplication in which MERN stack is used.Apart from
-              that user can see his complete data in the form of chart.For
-              signup there are two methods first one is traditional way using
-              email and password and along with that user can use his google
-              account for login and signup.
-            </p>
+        <IndividualProject reverse>
+          <ChildHolder rev="rev">
+            <ProjectDiscription>
+              <h2>TodoApplication</h2>
+              <h5>Description :</h5>
+              <p>
+                This is TodoApplication in which MERN stack is used.Apart from
+                that user can see his complete data in the form of chart.For
+                signup there are two methods first one is traditional way using
+                email and password and along with that user can use his google
+                account for login and signup.
+              </p>
 
-            <h5>Tech-Stack</h5>
-            <div className="tech-stack-wrapper">
-             <div>
-                <p>Netlify</p>
-                <SiNetlify/>
-              </div>
-            
-              <div>
-                <p>ReactJS</p>
-                <GrReactjs/>
-              </div>
-              <div>
-                <p>Redux</p>
-                <SiRedux/>
-              </div>
-              <div>
-                <p>Router</p>
-                <SiReactrouter/>
-              </div>
-             
-              <div>
-                <p>Styled Com</p>
-                <SiStyledcomponents/>
-              </div>
-             <div>
-              <p>ChartJs</p>
-              <BiLineChart/>
-             </div>
-              <div>
-                <p>Javascript</p>
-                <TbBrandJavascript/>
-              </div>
-              <div>
-                <p>Html</p>
-                <RiHtml5Line/>
-              </div>
-              <div>
-                <p>Css</p>
-                <FaCss3/>
-              </div>
-              <div>
-                <p>NodeJS</p>
-                <FaNodeJs/>
-              </div>
-              <div>
-                <p>MongoDB</p>
-                <SiMongodb/>
-              </div>
-              <div>
-                <p>Express</p>
-                <SiExpress/>
-              </div>
-              <div>
-                <p>JWT</p>
-                <SiJsonwebtokens/>
-              </div>
-              <div>
-                <p>PassportJS</p>
-                <SiPassport/>
-              </div>
-            
-             </div>
-            <ButtonHolder>
-              <a href="https://github.com/Ritesh134340/Mern_todo_application">
-                Code
-              </a>
-              <a href="https://todoapplicationmern.netlify.app" target="_blank">
-                View
-              </a>
-            </ButtonHolder>
-          </ProjectDiscription>
+              <h5>Tech-Stack</h5>
+              <div className="tech-stack-wrapper">
+                <div>
+                  <p>Netlify</p>
+                  <SiNetlify />
+                </div>
 
-          <ChildImageWrapper
-            href="https://todoapplicationmern.netlify.app/"
-            target="_blank"
-          >
-            <CoverImage src="https://user-images.githubusercontent.com/105931703/226313396-66daa637-80e4-414a-88f3-162c48252e68.png"></CoverImage>
-          </ChildImageWrapper>
-        </ChildHolder>
-      </IndividualProject>
+                <div>
+                  <p>ReactJS</p>
+                  <GrReactjs />
+                </div>
+                <div>
+                  <p>Redux</p>
+                  <SiRedux />
+                </div>
+                <div>
+                  <p>Router</p>
+                  <SiReactrouter />
+                </div>
 
-      <IndividualProject>
-        <ChildHolder>
-          <ChildImageWrapper
-            href="https://naukri12345.netlify.app/"
-            target="_blank"
-          >
-            <CoverImage src="https://user-images.githubusercontent.com/105931703/226314028-7d81f5ec-a6de-4f11-9430-ad83bc3af1ea.png
-"></CoverImage>
-          </ChildImageWrapper>
+                <div>
+                  <p>Styled Com</p>
+                  <SiStyledcomponents />
+                </div>
+                <div>
+                  <p>ChartJs</p>
+                  <BiLineChart />
+                </div>
+                <div>
+                  <p>Javascript</p>
+                  <TbBrandJavascript />
+                </div>
+                <div>
+                  <p>Html</p>
+                  <RiHtml5Line />
+                </div>
+                <div>
+                  <p>Css</p>
+                  <FaCss3 />
+                </div>
+                <div>
+                  <p>NodeJS</p>
+                  <FaNodeJs />
+                </div>
+                <div>
+                  <p>MongoDB</p>
+                  <SiMongodb />
+                </div>
+                <div>
+                  <p>Express</p>
+                  <SiExpress />
+                </div>
+                <div>
+                  <p>JWT</p>
+                  <SiJsonwebtokens />
+                </div>
+                <div>
+                  <p>PassportJS</p>
+                  <SiPassport />
+                </div>
+              </div>
+              <ButtonHolder>
+                <a href="https://github.com/Ritesh134340/Mern_todo_application">
+                  Code
+                </a>
+                <a
+                  href="https://todoapplicationmern.netlify.app"
+                  target="_blank"
+                >
+                  View
+                </a>
+              </ButtonHolder>
+            </ProjectDiscription>
 
-          <ProjectDiscription>
-            <h2>Naukri_Clone</h2>
-            <h5>Description :</h5>
-            <p>
-              Naukri.com is a recruitment platform that provides hiring-related
-              services to corporates/recruiters, placement agencies, and job
-              seekers in India and overseas. It offers multiple products like
-              Resume Database Access, Job Listings, and Response Management
-              Tools.
-            </p>
+            <ChildImageWrapper
+              href="https://todoapplicationmern.netlify.app/"
+              target="_blank"
+            >
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/226313396-66daa637-80e4-414a-88f3-162c48252e68.png"></CoverImage>
+            </ChildImageWrapper>
+          </ChildHolder>
+        </IndividualProject>
 
-            <h5>Tech-Stack</h5>
-            <h6>MONGODB | REACT | NODEJS | EXPRESS | REDUX</h6>
-            <ButtonHolder>
-              <a
-                href="https://github.com/Sharmacs8853/overjoyed-field-1627"
-                target="_blank"
-              >
-                Code
-              </a>
-              <a href="https://naukri12345.netlify.app/" target="_blank">
-                View
-              </a>
-            </ButtonHolder>
-          </ProjectDiscription>
-        </ChildHolder>
-      </IndividualProject>
+        <IndividualProject>
+          <ChildHolder>
+            <ChildImageWrapper
+              href="https://naukri12345.netlify.app/"
+              target="_blank"
+            >
+              <CoverImage
+                src="https://user-images.githubusercontent.com/105931703/226314028-7d81f5ec-a6de-4f11-9430-ad83bc3af1ea.png
+"
+              ></CoverImage>
+            </ChildImageWrapper>
+
+            <ProjectDiscription>
+              <h2>Naukri_Clone</h2>
+              <h5>Description :</h5>
+              <p>
+                Naukri.com is a recruitment platform that provides
+                hiring-related services to corporates/recruiters, placement
+                agencies, and job seekers in India and overseas. It offers
+                multiple products like Resume Database Access, Job Listings, and
+                Response Management Tools.
+              </p>
+
+              <h5>Tech-Stack</h5>
+              <h6><p>MONGODB</p> | <p>REACT </p>| <p>NODEJS</p> | <p>EXPRESS</p> | <p>REDUX</p></h6>
+              <ButtonHolder>
+                <a
+                  href="https://github.com/Sharmacs8853/overjoyed-field-1627"
+                  target="_blank"
+                >
+                  Code
+                </a>
+                <a href="https://naukri12345.netlify.app/" target="_blank">
+                  View
+                </a>
+              </ButtonHolder>
+            </ProjectDiscription>
+          </ChildHolder>
+        </IndividualProject>
 
         <IndividualProject reverse>
           <ChildHolder rev="rev">
@@ -325,7 +334,7 @@ const Projects = () => {
               </p>
 
               <h5>Tech-Stack</h5>
-              <h6>REACT | REDUX | STYLEDCOMPONENT | HTML | CSS | JAVASCRIPT</h6>
+              <h6><p>REACT</p> | <p>REDUX</p> | <p>STYLED COMPONENT</p> | <p>HTML</p> | <p>CSS</p> | <p>JAVASCRIPT</p></h6>
               <ButtonHolder>
                 <a href="https://github.com/Ritesh134340/geektrust_teeRex_store">
                   Code
@@ -368,7 +377,11 @@ const Projects = () => {
               </p>
 
               <h5>Tech-Stack</h5>
-              <h6>REACT | REDUX | CHAKRAUI | FIREBASE | STYLEDCOMPONENT</h6>
+             
+
+              <h6> 
+                <p>REACT</p> | <p>REDUX</p>
+                 | <p>CHAKRAUI</p>  | <p>FIREBASE</p>  |  <p>STYLEDCOMPONENT</p> </h6>
               <ButtonHolder>
                 <a href="https://github.com/HackerSushant76/flowery-ear-2957">
                   Code
@@ -397,7 +410,7 @@ const Projects = () => {
               </p>
 
               <h5>Tech-Stack</h5>
-              <h6>HTML | CSS | JAVASCRIPT ES6 | LOCAL-STORAGE </h6>
+              <h6><p>HTML</p>  | <p>CSS</p>  | <p>JAVASCRIPT ES6</p>  | <p>LOCAL STORAGE </p> </h6>
               <ButtonHolder>
                 <a
                   href="https://github.com/MoHitksS/vengeful-thrill-8133"
@@ -441,7 +454,7 @@ const Projects = () => {
 
               <h5>Tech-Stack</h5>
               <h6>
-                REACT | CHARTJS | STYLED COMPONENTS| HTML | CSS | JAVASCRIPT
+               <p>REACT</p>  | <p> CHARTJS</p> | <p>STYLED COMPONENTS</p> | <p>HTML</p>  | <p>CSS</p>  | <p>JAVASCRIPT</p> 
               </h6>
               <ButtonHolder>
                 <a
@@ -473,7 +486,7 @@ const Projects = () => {
               </p>
 
               <h5>Tech-Stack</h5>
-              <h6>HTML | CSS | JAVASCRIPT | JSON-SERVER</h6>
+              <h6><p>HTML</p>|  <p>CSS</p>    | <p>JAVASCRIPT</p>  | <p> JSON-SERVER</p></h6>
               <ButtonHolder>
                 <a
                   href="https://github.com/suraj-996/ssense_unit2_project"
@@ -518,7 +531,7 @@ const Projects = () => {
               </p>
 
               <h5>Tech-Stack</h5>
-              <h6>HTML | CSS | JAVASCRIPT | REACT | FIREBASE | CHAKRA UI</h6>
+              <h6><p> HTML</p> | <p>CSS</p>  | <p>JAVASCRIPT</p>  | <p>REACT</p>  | <p>FIREBASE</p>  | <p> CHAKRA UI</p></h6>
               <ButtonHolder>
                 <a
                   href="https://github.com/Ritesh134340/spicy-representative-2917"
@@ -536,13 +549,8 @@ const Projects = () => {
             </ProjectDiscription>
           </ChildHolder>
         </IndividualProject>
-
-
-
       </ProjectWrapperChild>
     </>
-   
-   
   );
 };
 

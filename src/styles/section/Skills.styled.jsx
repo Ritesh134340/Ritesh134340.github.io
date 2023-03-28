@@ -19,45 +19,49 @@ h1{
 
 export const SkillsWrapperChild=styled.div`
    text-align:center;
-   margin-top:80px;
+
+   margin-top:30px;
    margin-bottom:80px;
-   display:grid;
-   gap:45px 100px;
-   grid-template-columns: repeat(4,1fr);
-   justify-content: center;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   flex-wrap:wrap;
+   gap:20px;
+  
+  
+  
+   div{
+    
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding:5px 10px;
+      color:white;
+   }
+   div>h4{
+      font-size:14px;
+      margin-top:15px;
+      font-family:"poppins",monospace;
+      letter-spacing:0.8px;
+      background-color:white;
+      color:black;
+      font-weight:600;
+      padding:2px 15px;
+      border-radius: 8px;
+   }
    @media (max-width:1050px){
    grid-template-columns: repeat(3,1fr);
    font-size:100px;
    gap:30px;
   };
- 
+  
   @media (max-width:${({theme})=>theme.mobile}){
    grid-template-columns: repeat(2,1fr);
    font-size:100px;
    grid-row-gap:25px;
    grid-column-gap:0px;
   }
-   h4{
-      font-size:18px;
-      margin-top:15px;
-      font-family:"poppins",monospace;
-      letter-spacing:0.8px;
-      background-color: ${({theme})=>theme.colors.purple};
-      opacity:50%;
-      padding-left:10px;
-      padding-right:10px;
-      border-radius: 8px;
-   }
-   div{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width:200px;
-      color:white;
-   }
-   & :hover{
-      color:white;
-   }
+  
 `
 
