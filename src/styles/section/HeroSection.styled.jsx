@@ -44,7 +44,6 @@ text-align: center;
 padding-top:20px;
 padding-bottom:30px;
 .cta-wrapper{
-
   margin-top:50px;
   height:auto;
   display:flex;

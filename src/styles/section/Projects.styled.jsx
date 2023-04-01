@@ -1,18 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const Divmover = keyframes`
-  
-  0%{
-    transform: rotate3d(1, 1, 1, 0.05turn);
-     
-  }
- 
-  
-
- 
-
-
-`;
 
 export const ProjectWrapper = styled.div`
   margin-bottom: 30px;

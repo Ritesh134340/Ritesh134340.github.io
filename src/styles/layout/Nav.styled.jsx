@@ -17,8 +17,6 @@ const navItemAnimation = ({ index }) => css`
 `;
 
 export const Nav = styled.nav`
-  position:sticky;
-  top:0;
   height: 85px;
   width: 100%;
   padding-right:15px;
@@ -28,9 +26,11 @@ export const Nav = styled.nav`
   align-items: center;
   /* position: fixed; */
   z-index: 999;
- marginw2q  -top:30px;
+  margin-top:40px;
+  position:sticky;
+  top:0;
   transition: all 1s ease-in-out;
-  position: fixed;
+
   /* top: 40px; */
   
 
