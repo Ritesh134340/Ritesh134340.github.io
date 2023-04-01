@@ -3,13 +3,13 @@ import { AboutHeader, AboutWrapper, ImageWrapper, ParaWrapper } from "../styles/
 
 const About = () => {
   return (
-    <div div id="about">
+    <div id="about">
     <AboutHeader>About Me
     </AboutHeader>
     <AboutWrapper >
         <div className="about-left" >
         <ImageWrapper>
-      <img src="../images/profile.png"></img>
+      <img src="../images/profile.png" alt="profile"></img>
       <h1>Ritesh Kumar</h1>
       </ImageWrapper>
 

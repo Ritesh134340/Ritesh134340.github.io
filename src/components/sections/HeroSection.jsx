@@ -3,7 +3,7 @@ import { AnimatedGradientText, HeroContent, StyledHeroSection } from "../../styl
 
 export const HeroSection=()=>{
   return (
-  <StyledHeroSection>
+  <StyledHeroSection id="main">
   
     <HeroContent>
         <h1>Ritesh Kumar</h1>

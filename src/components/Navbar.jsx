@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
     <Nav scrollDirection={scrollDirection}>
       <div>
-       <a >
+       <a smooth href="#main">
         <Logo src="./images/logo.png"/>
        </a>
       </div>

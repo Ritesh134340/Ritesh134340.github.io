@@ -17,6 +17,8 @@ const navItemAnimation = ({ index }) => css`
 `;
 
 export const Nav = styled.nav`
+  position:sticky;
+  top:0;
   height: 85px;
   width: 100%;
   padding-right:15px;
@@ -24,11 +26,13 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  z-index: 98;
+  /* position: fixed; */
+  z-index: 999;
+ marginw2q  -top:30px;
   transition: all 1s ease-in-out;
   position: fixed;
-  top: 40px;
+  /* top: 40px; */
+  
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
    width:100%;

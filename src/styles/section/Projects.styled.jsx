@@ -17,6 +17,7 @@ const Divmover = keyframes`
 export const ProjectWrapper = styled.div`
   margin-bottom: 30px;
   padding-bottom: 35px;
+
   h1 {
     color: white;
     font-family: monospace;
@@ -36,16 +37,18 @@ export const ProjectWrapper = styled.div`
     text-align: center;
     letter-spacing: 0.6px;
     font-weight: 400;
+    margin-top: 50px;
     @media (max-width: 500px) {
       font-size: 20px;
       width: 95%;
     }
   }
-  margin-top: 50px;
+ 
 `;
 
 export const ProjectWrapperChild = styled.div`
   margin: auto;
+ 
 `;
 
 export const IndividualProject = styled.div`
@@ -171,7 +174,12 @@ export const ProjectDiscription = styled.div`
   @media (max-width: 1024px) {
     margin-top: 5px;
     width: 100%;
-    padding-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media(max-width:665px){
+    padding-left: 5px;
+    padding-right: 5px;
   }
 `;
 

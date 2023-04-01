@@ -33,7 +33,7 @@ const Contact = () => {
       <h1>Please Send your Query</h1>
       <ChildHolder>
       <ContactOptional>
-        <a><FaWhatsapp  style={{marginRight:"10px",fontSize:"35px"}} href="#"/>+91 8541837750</a>
+        <a ><FaWhatsapp  style={{marginRight:"10px",fontSize:"35px"}} href="#"/>+91 8541837750</a>
         <a href="mailto:riteshkumar134340@gmail.com"><SiGmail  style={{marginRight:"10px",fontSize:"35px"}} />riteshKumar134340@gmail.com</a>
       </ContactOptional>
       

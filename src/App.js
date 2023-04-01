@@ -19,17 +19,43 @@ function App() {
     <>
     <ThemeProvider theme={theme}>
     <GlobalStyles/>
+     
      <TopBanner/>
+    
      <Navbar/>
+
      <div style={{marginTop:"125px"}}>
+     
+     <hero>
      <HeroSection/>
-     <About/>
+     </hero>
+
+     <about>
+      <About/>
+     </about>
+     
+     <project>
      <Projects/>
+     </project>
+     
+     <skills>
      <Skills/>
-     <Stats/>
-     <Contact/>
+     </skills>
+      
+      <stats>
+      <Stats/>
+      </stats>
+    
+    <contact>
+    <Contact/>
+    </contact>
+    
      <Scroll/>
+
+     <social>
      <Follow/>
+    </social>
+     
      </div>
     
     </ThemeProvider>
