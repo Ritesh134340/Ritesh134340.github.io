@@ -24,7 +24,7 @@ function App() {
     
      <Navbar/>
 
-     <div style={{marginTop:"0px"}}>
+     <div style={{paddingTop:"20px"}}>
      
      <hero>
      <HeroSection/>

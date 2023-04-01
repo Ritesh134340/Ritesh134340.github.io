@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 export const ProjectWrapper = styled.div`
@@ -175,8 +175,8 @@ export const CoverImage = styled.img`
   width: 100%;
   border-radius: 15px;
   box-sizing:border-box;
-  padding:5px;
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  padding:7px;
+  background-color: gray;
    &:hover{
     animation:slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both
    }
