@@ -20,6 +20,11 @@ import { SiPassport } from "react-icons/si";
 import { SiMinutemailer } from "react-icons/si";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { ImFacebook2 } from "react-icons/im";
+import {SiNextdotjs} from "react-icons/si"
+import {TbBrandVercel} from "react-icons/tb"
+import {SiTailwindcss} from "react-icons/si"
+import {SiAuth0} from "react-icons/si"
+
 import {
   ButtonHolder,
   ChildHolder,
@@ -40,6 +45,96 @@ const Projects = () => {
       </ProjectWrapper>
 
       <ProjectWrapperChild>
+
+      <IndividualProject reverse>
+          <ChildHolder rev="rev">
+            <ProjectDiscription>
+              <h2>Blogify</h2>
+              <h5>Description :</h5>
+              <p>
+              Blogify is a web application which provides user different tech related blogs, where they can read and learn different technologies.
+
+              We have used Next js as a framework for this web application. For backend we have used inbuilt server of next js with mongodb database.
+              </p>
+
+              <h5>Tech-Stack</h5>
+              <div className="tech-stack-wrapper">
+               
+
+                <div>
+                  <p>NextJS</p>
+                  <SiNextdotjs />
+                </div>
+
+                <div>
+                  <p>Tailwind Css</p>
+                  <SiTailwindcss/>
+                </div>
+
+
+                <div>
+                  <p>Next Auth</p>
+                  <SiAuth0/>
+                </div>
+
+                <div>
+                  <p>NodeJS</p>
+                  <FaNodeJs />
+                </div>
+                <div>
+                  <p>MongoDB</p>
+                  <SiMongodb />
+                </div>
+
+                <div>
+                  <p>JWT</p>
+                  <SiJsonwebtokens />
+                </div>
+
+              
+
+                <div>
+
+                  <p>Vercel</p>
+                  <TbBrandVercel/>
+                </div>
+                <div>
+                  <p>Javascript</p>
+                  <TbBrandJavascript />
+                </div>
+                <div>
+                  <p>Html</p>
+                  <RiHtml5Line />
+                </div>
+                <div>
+                  <p>Css</p>
+                  <FaCss3 />
+                </div>
+               
+              </div>
+              <ButtonHolder>
+                <a href="https://github.com/Ritesh134340/blogify"   target="_blank">
+                  Code
+                </a>
+                <a
+                  href="https://blogify.today"
+                  target="_blank"
+                >
+                  View
+                </a>
+              </ButtonHolder>
+            </ProjectDiscription>
+
+            <ChildImageWrapper
+              href="https://blogify.today"
+              target="_blank"
+            >
+              <CoverImage src="https://user-images.githubusercontent.com/105931703/236970380-59ea4938-4611-4c7e-83c6-19c1c3996a52.png"></CoverImage>
+            </ChildImageWrapper>
+          </ChildHolder>
+        </IndividualProject>
+
+
         <IndividualProject>
           <ChildHolder>
             <ChildImageWrapper>
