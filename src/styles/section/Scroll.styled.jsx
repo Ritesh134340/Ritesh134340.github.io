@@ -8,9 +8,9 @@ export const Button = styled.div`
   z-index: 1;
   cursor: pointer;
   color: ${({ theme }) => theme.colors.orange};
-  
-  @media (max-width:${({theme})=>theme.mobile}){
-      left:47%;
-      bottom:60px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    left: 47%;
+    bottom: 60px;
   }
 `;

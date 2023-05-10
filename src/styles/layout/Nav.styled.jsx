@@ -19,32 +19,30 @@ const navItemAnimation = ({ index }) => css`
 export const Nav = styled.nav`
   height: 85px;
   width: 100%;
-  padding-right:15px;
+  padding-right: 15px;
   background: rgb(2, 12, 27, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* position: fixed; */
   z-index: 999;
-  margin-top:40px;
-  position:sticky;
-  top:0;
+  margin-top: 40px;
+  position: sticky;
+  top: 0;
   transition: all 1s ease-in-out;
 
   /* top: 40px; */
-  
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-   width:100%;
+    width: 100%;
   }
 `;
 
 export const Logo = styled.img`
   width: 120px;
-  
+
   @media (max-width: ${({ theme }) => theme.mobile}) {
-   width:105px;
-   
+    width: 105px;
   }
 `;
 
@@ -60,8 +58,7 @@ export const MenuIcon = styled.div`
   z-index: 999;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: inline-block;
-    right:6%;
-    
+    right: 6%;
   }
 `;
 
@@ -114,12 +111,10 @@ export const NavList = styled.ul`
   align-items: center;
   justify-content: flex-start;
   font-size: 14px;
- 
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
     height: 100vh;
-   
 
     background: ${({ theme }) => theme.colors.lightNavyBlue};
     position: fixed;

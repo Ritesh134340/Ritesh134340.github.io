@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ProjectWrapper = styled.div`
   margin-bottom: 30px;
   padding-bottom: 35px;
@@ -30,12 +29,10 @@ export const ProjectWrapper = styled.div`
       width: 95%;
     }
   }
- 
 `;
 
 export const ProjectWrapperChild = styled.div`
   margin: auto;
- 
 `;
 
 export const IndividualProject = styled.div`
@@ -90,11 +87,11 @@ export const ProjectDiscription = styled.div`
   }
   .tech-stack-wrapper > div {
     font-size: 30px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:2px 15px;
-    gap:8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+    gap: 8px;
     color: orange;
     border-radius: 35px;
     background-color: white;
@@ -102,9 +99,8 @@ export const ProjectDiscription = styled.div`
   .tech-stack-wrapper > div > p {
     font-size: 15px;
     color: black;
-    padding-top:0px;
-    padding-bottom:0px;
-  
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .credential-wrapper > h5 {
@@ -150,12 +146,11 @@ export const ProjectDiscription = styled.div`
     letter-spacing: 0.6px;
   }
   h6 > p {
-   
-    background-color: #FFEBB4;
-    border:2px solid gray;
+    background-color: #ffebb4;
+    border: 2px solid gray;
     padding: 2px 15px;
     border-radius: 30px;
-    color:#E21818;
+    color: #e21818;
   }
 
   @media (max-width: 1024px) {
@@ -164,7 +159,7 @@ export const ProjectDiscription = styled.div`
     padding-left: 10px;
     padding-right: 10px;
   }
-  @media(max-width:665px){
+  @media (max-width: 665px) {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -174,20 +169,20 @@ export const CoverImage = styled.img`
   height: 100%;
   width: 100%;
   border-radius: 15px;
-  box-sizing:border-box;
-  padding:7px;
+  box-sizing: border-box;
+  padding: 7px;
   background-color: gray;
-   &:hover{
-    animation:slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both
-   }
-   @keyframes slide-fwd-center{
-    0%{
-      transform:scale(1)
-    }
-   100%{
-    transform:scale(1.02)
+  &:hover {
+    animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
- }
+  @keyframes slide-fwd-center {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.02);
+    }
+  }
   @media all and (max-width: 1024px) and (min-width: 769px) {
   }
 
@@ -219,7 +214,7 @@ export const ChildImageWrapper = styled.a`
 
   @media (max-width: 1050px) {
     width: 100%;
-  } ;
+  }
 `;
 
 export const ChildHolder = styled.div`
@@ -241,5 +236,5 @@ export const ChildHolder = styled.div`
     gap: 0px;
     padding: 5px;
     text-align: center;
-  } ;
+  }
 `;
